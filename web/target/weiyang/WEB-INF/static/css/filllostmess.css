@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+ body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+		
+		
+		.mart-status, article, body, figure,  input, li, p, select, table, tbody, td, textarea, tfoot, thead, tr, ul 
+		{
+    		font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+			font-size:16px;
+		}
+		
+
+		.mess
+		{
+			width:90%;
+		}
+		
+		.file-style
+		{
+			width:210px;
+			height:250px;
+			background:url(../images/insert.png);
+			cursor: pointer;
+			background-size: cover;
+			border-bottom:2px #ccc solid;
+		}
+
+.btn-margin{
+	margin-left: 50px;
+	margin-top:200px;
+}
+
+
+.h1-header
+		{
+			margin-left:45%;	
+		}
+		
+		 @media (max-width: 768px)
+ 		{
+				.mess
+				{
+					width:100%;	
+				}
+				
+				.pic-style
+				{
+					margin-top:20px	
+				}
+				
+				.h1-header
+				{
+					text-align:center;	
+					margin-left:0;
+				}
+				
+				.mart-status, article, body, figure,  input,  p, select, table, tbody, td, textarea, tfoot, thead, tr
+				{
+					font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+					font-size:14px;
+				}
+
+				.btn-margin{
+					margin-top: 20px;
+				}
+
+				.file-style{
+					margin-left:15px;
+				}
+
+				#s_city,#l_city{
+					margin-top: 20px;
+				}
+		}
+		
+       
+

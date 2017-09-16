@@ -1,0 +1,40 @@
+.third-account{
+    width:80%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.third-img
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    margin-top:30px;
+    background: #1b435d;
+    color:#1f6cb0;
+}
+
+.footer-item{
+    margin:20px 2%;
+}
+
+.footer-item a{
+    text-decoration: none;
+}
+
+.footer-item a:hover{
+    color: #fff;
+}
+
+.power{
+    text-align: center;
+    background: #1b435d;
+    margin-bottom: 0;
+}

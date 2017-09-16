@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.dao.LeavewordDAO">
+
+    <!-- insert语句 -->
+    <insert id="insertLeaveword" parameterType="Leaveword" keyProperty="id">
+
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT @@IDENTITY
+        </selectKey>
+
+        insert into leaveword(
+        fromid,
+        toid,
+        isreply,
+        content,
+        createdate)
+        values
+        (
+        #{fromid},
+        #{toid},
+        #{isreply},
+        #{content},
+        #{createdate})
+    </insert>
+
+    <!-- select语句 -->
+    <select id="selectLeavewordFromId" parameterType="int" resultType="Leaveword">
+        select * from leaveword
+        where leaveword.id = #{id}
+    </select>
+
+    <select id="selectCountFromId" parameterType="int" resultType="int">
+        select count(*) from leaveword
+        where leaveword.toid = #{0} AND leaveword.isreply = #{1}
+    </select>
+
+    <select id="selectLeaveword" resultType="Leaveword">
+        SELECT * from leaveword
+        <where>
+            <if test="param1.fromid!=0">
+                AND leaveword.fromid = #{param1.fromid}
+            </if>
+            <if test="param1.toid!=0">
+                AND leaveword.toid = #{param1.toid}
+            </if>
+            <if test="param1.isreply!=0">
+                AND leaveword.isreply = #{param1.isreply}
+            </if>
+            <if test="param1.createdate !=null and param1.createdate!='' ">
+                AND leaveword.createdate LIKE CONCAT(CONCAT('%', #{param1.createdate}),'%')
+            </if>
+        </where>
+        limit #{param2},#{param3}
+    </select>
+
+    <!-- update语句 -->
+    <update id="updateLeaveword" parameterType="Leaveword">
+        update leaveword set
+        fromid=#{fromid},
+        toid=#{toid},
+        isreply=#{isreply},
+        content=#{content},
+        createdate=#{createdate}
+        where id=#{id}
+    </update>
+
+    <!-- delete语句 -->
+    <delete id="deleteLeaveword" parameterType="int">
+        delete from leaveword
+        where id=#{id}
+    </delete>
+
+
+</mapper>

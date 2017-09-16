@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+		body {
+            padding-top: 50px;
+            color: #5a5a5a;
+			margin:0;
+			padding-right:0;
+        }
+
+		.container-lostmess{
+			background:#f7f7f7;padding:0;margin-top:-10px;width:100%;
+		}
+		
+		.mess-font-color
+		{
+			width: 20%;
+			color:#2F4F4F;
+			padding-right:0;
+			font-weight: 800;
+		}
+		
+		.mess-content
+		{
+			width:80%;
+			color: #000000;
+			padding-right:0;
+			margin-right:0;
+		}
+		
+		.relation-way
+		{
+			color:#53435b;
+			margin-top:20px
+		}
+
+		.container-lostmess-content{
+			margin:20px 0;
+		}
+
+		.lostmess-text{
+			background:#fff;
+			width: 70%;
+			margin:0 auto;
+			padding: 30px 5%;
+			border-radius: 5px;
+			box-shadow: 0 0 20px #ccc;
+			line-height: 30px;
+		}
+
+		.name
+		{
+			font-size:48px; 
+			margin-top:30px; 
+			padding-bottom:20px;
+			border-bottom:1px solid #718CA1;;
+		}
+		
+		.row-offset
+		{
+			width:100%;
+			display: flex;
+			flex-direction: row;
+		}
+		
+		.kuang
+		{
+			width:100%; 
+			padding-top:8px;
+			background:#59748C;
+			color:#fff;
+			border-bottom:1px solid #718CA1;
+			padding-bottom:10px;
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+		}
+		
+		.btn-color-font
+		{
+			color:#8BDBF5;
+			font-size:15px;	
+		}
+		
+		.all-mess
+		{
+			width:70%;
+			margin:0 auto;
+			background:#F8F8F8;
+			border-radius:10px;
+			border:1px solid #ccc;
+			margin-bottom:20px;
+			box-shadow: 0 0 20px #ccc;
+			-moz-box-shadow: 0 0 20px #ccc;
+			-wekit-box-shadow: 0 0 20px #ccc;
+		}
+		
+		.lost-header
+		{
+			font-size:36px;
+			text-align:center;
+			padding-bottom:30px;
+			margin-left:5%;	
+		}
+	
+		
+		.mart-status, article, body, figure,  input, li, p, select, table, tbody, td, textarea, tfoot, thead, tr, ul 
+		{
+    		font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,"Microsoft YaHei","微软雅黑",sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+			font-size:16px;
+		}
+		
+		h1
+		{
+			margin-left:5%;
+			padding-bottom:20px;	
+		}
+		
+		h2
+		{
+			padding-bottom:20px;	
+		}
+			.row-top
+			{
+				margin-top:0px;	
+			}
+			
+			.icon-bar
+			{
+				background:#fff;	
+			}
+
+		.lostpicture{
+			margin:0 auto;
+			margin-bottom: 30px;
+			width:70%;
+			text-align: center;
+		}
+		
+		@media (max-width: 768px)
+ 		{
+			.col-md-4-border
+			{
+				border-bottom:1px #ccc solid;
+			}
+			
+			.lost-header
+			{
+				margin-top:20px;	
+				margin-left:0;
+			}
+			
+			.row-offset
+			{
+				margin-left:0;	
+			}
+
+			.lostpicture{
+				margin:0 auto;
+				margin-bottom: 30px;
+			}
+			
+			.row-top
+			{
+				margin-top:10px;	
+			}
+
+			.container-lostmess{
+				margin-top:-80px;
+				width:100%;
+			}
+
+			.lostmess-text{
+				width:90%;
+				padding: 10px;
+			}
+
+			.all-mess{
+				width:100%;
+			}
+
+			.mess-font-color
+			{
+				width: 30%;
+			}
+
+			.mess-content {
+				width: 70%;
+			}
+			
+		}
+
+
